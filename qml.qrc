@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>BaseCamera.qml</file>
+        <file>BaseAxis.qml</file>
+        <file>J1Axis.qml</file>
+        <file>J2Axis.qml</file>
+        <file>J3Axis.qml</file>
+        <file>CustomPointLight.qml</file>
+        <file>CustomDirectLight.qml</file>
+        <file>RobotControl.qml</file>
+        <file>SceneRoot.qml</file>
+    </qresource>
+</RCC>

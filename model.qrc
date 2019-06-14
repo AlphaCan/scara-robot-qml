@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>model/base.obj</file>
+        <file>model/J1.obj</file>
+        <file>model/J2.obj</file>
+        <file>model/J3.obj</file>
+    </qresource>
+</RCC>
