@@ -19,14 +19,8 @@ Item {
         }
         RobotControl {
             id: robotControl
-
             x: 0
             y: 0
-        }
-
-        ProgressBar{
-            anchors.centerIn: parent
-            indeterminate: true
         }
 
     }

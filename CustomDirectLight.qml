@@ -9,7 +9,7 @@ Entity {
 
     DirectionalLight{
         id:directlight
-        worldDirection: Qt.vector3d(0.3, -1.0, 5.0).normalized();//方向灯世界方向
+        worldDirection: Qt.vector3d(3.3, -1.0, 5.0).normalized();//方向灯世界方向
         color: root.usercolor
         intensity: 0.7
     }

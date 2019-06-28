@@ -9,7 +9,7 @@ Entity{
 
     BaseCamera{
         id:maincamera
-        position: Qt.vector3d(-145,50,-10)//相机位置
+        position: Qt.vector3d(-55,10,0)//相机位置
     }
 
     OrbitCameraController{//添加控制轨道路径的场景相机，允许控制3D旋转 缩放
@@ -18,12 +18,18 @@ Entity{
 
     CustomDirectLight{//方向光源
         id:userdirectlight
-//        usercolor: "white"
+       usercolor: "white"
     }
 
     CustomPointLight{//点光源
         id:userpointlight
-//        usercolor: "white"
+        usercolor: "white"
+    }
+
+    CustomPointLight{//点光源 消除另一边的阴影
+        id:userpointlight1
+        lightposition: Qt.vector3d(150,-100,100)
+        usercolor: "white"
     }
 
     components: [
