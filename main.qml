@@ -2,7 +2,10 @@ import QtQuick 2.12
 import QtQuick.Scene3D 2.12
 import QtQuick.Controls 2.5
 
+
 Item {
+
+
     Frame{
         anchors.fill: parent
         Scene3D {
@@ -15,7 +18,8 @@ Item {
 
             SceneRoot {
                 id: root
-            }           
+            }
+
         }
         RobotControl {
             id: robotControl
@@ -23,8 +27,25 @@ Item {
             y: 0
         }
 
+        Column {
+            anchors.centerIn: parent
+
+            BusyIndicator {
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+
+            Label {
+                text: "Loading 3D Model ..."
+                font.pointSize: 14
+                font.family: "Times New Roman"
+
+            }
+        }
+
     }
 }
+
+
 
 
 

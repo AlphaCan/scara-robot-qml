@@ -67,10 +67,5 @@ Entity{
         material: material
     }
 
-    Rectangle{
-        width: 50
-        height: 100
-        color: "red"
-    }
 }
 

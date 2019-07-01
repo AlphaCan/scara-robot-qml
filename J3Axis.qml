@@ -14,6 +14,9 @@ Entity{
     Mesh{//Scara 三轴模型
         id:j3
         source: "qrc:/model/J3.obj"
+
     }
     components: [j3,j3material,root.material]
+
+
 }
