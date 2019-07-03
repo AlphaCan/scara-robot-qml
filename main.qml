@@ -1,10 +1,14 @@
 import QtQuick 2.12
 import QtQuick.Scene3D 2.12
 import QtQuick.Controls 2.5
-
+import RobotStatus 1.0
 
 Item {
 
+    RobotModelStatus{
+        id:loadstatus
+
+    }
 
     Frame{
         anchors.fill: parent
@@ -17,7 +21,7 @@ Item {
             cameraAspectRatioMode: Scene3D.AutomaticAspectRatio
 
             SceneRoot {
-                id: root
+                id: model
             }
 
         }
@@ -27,7 +31,10 @@ Item {
             y: 0
         }
 
+
+
         Column {
+            visible: !loadstatus.modelloadstatus
             anchors.centerIn: parent
 
             BusyIndicator {
@@ -35,18 +42,23 @@ Item {
             }
 
             Label {
+
                 text: "Loading 3D Model ..."
                 font.pointSize: 14
                 font.family: "Times New Roman"
 
             }
+
+            Button{
+                onClicked: {
+                    console.info(loadstatus.modelloadstatus)
+                }
+            }
+
         }
 
     }
 }
-
-
-
 
 
 

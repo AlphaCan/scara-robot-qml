@@ -55,6 +55,7 @@ Entity{
     J1Axis{
         id:j1
         material: material
+
     }
 
     J2Axis{

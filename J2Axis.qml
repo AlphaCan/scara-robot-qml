@@ -15,6 +15,7 @@ Entity{
     Mesh{//scara 二轴模型
         id:j2
         source: "qrc:/model/J2.obj"
+
     }
     components: [j2,j2material,root.material]
 }

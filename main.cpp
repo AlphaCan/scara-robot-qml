@@ -25,11 +25,14 @@ int main(int argc, char *argv[])
 #include <QGuiApplication>
 #include <QQuickView>
 #include <QOpenGLContext>
+#include "robotstatus.h"
 
 
 int main(int argc, char **argv)
 {
     QGuiApplication app(argc, argv);
+
+    qmlRegisterType<RobotStatus>("RobotStatus",1,0,"RobotModelStatus");
 
     QQuickView view;
 
@@ -37,6 +40,7 @@ int main(int argc, char **argv)
     view.setResizeMode(QQuickView::SizeRootObjectToView);
     view.setSource(QUrl("qrc:/main.qml"));
     view.show();
+
 
     return app.exec();
 }
