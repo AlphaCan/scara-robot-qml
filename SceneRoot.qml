@@ -7,6 +7,8 @@ import QtQuick 2.12
 Entity{
     id:root
 
+    property bool loadstatus:j3.meshstatus
+
     BaseCamera{
         id:maincamera
         position: Qt.vector3d(-55,10,0)//相机位置

@@ -1,14 +1,10 @@
 import QtQuick 2.12
 import QtQuick.Scene3D 2.12
 import QtQuick.Controls 2.5
-import RobotStatus 1.0
 
 Item {
 
-    RobotModelStatus{
-        id:loadstatus
 
-    }
 
     Frame{
         anchors.fill: parent
@@ -22,6 +18,7 @@ Item {
 
             SceneRoot {
                 id: model
+
             }
 
         }
@@ -29,12 +26,11 @@ Item {
             id: robotControl
             x: 0
             y: 0
+            robotstatusactive: model.loadstatus//机器人状态
         }
 
-
-
         Column {
-            visible: !loadstatus.modelloadstatus
+            visible: !model.loadstatus// 隐藏繁忙加载图标
             anchors.centerIn: parent
 
             BusyIndicator {

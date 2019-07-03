@@ -7,6 +7,9 @@ Item {
 
     width: 200
     height: 300
+
+    property bool robotstatusactive
+
     ColumnLayout{
         width: 202
         height: 300
@@ -60,7 +63,7 @@ Item {
             Layout.minimumHeight: 50
             Layout.minimumWidth: 50
             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-
+            active: robotstatusactive
         }
     }
 
