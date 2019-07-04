@@ -45,12 +45,6 @@ Item {
 
             }
 
-            Button{
-                onClicked: {
-                    console.info(loadstatus.modelloadstatus)
-                }
-            }
-
         }
 
     }

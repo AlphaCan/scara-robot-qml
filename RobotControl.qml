@@ -11,59 +11,56 @@ Item {
     property bool robotstatusactive
 
     ColumnLayout{
+        objectName: "sliders"
         width: 202
         height: 300
         Slider {
-            id: base_slider
-            x: 20
-            y: 19
+            id: v_gdl1
             width: 117
             height: 24
             value: 0.5
+            objectName: "v_gdl1"
         }
 
         Slider {
-            id: j1_slider
-            x: 20
-            y: 60
+            id: gdl1
             width: 117
             height: 21
             value: 0.5
+            objectName: "gdl1"
         }
 
         Slider {
-            id: j2_slider
-            x: 20
-            y: 98
+            id: gdl2
             width: 117
             height: 20
             value: 0.5
+            objectName: "gdl2"
         }
 
         Slider {
-            id: j3_slider
-            x: 20
-            y: 130
+            id: gdl3
             width: 117
             height: 23
             value: 0.5
+            objectName: "gdl3"
         }
 
         Slider {
             id: j4_slider
-            x: 20
-            y: 165
             width: 117
             height: 21
             value: 0.5
         }
 
         StatusIndicator {
-            id: statusIndicator
+            id: indicator
+            objectName: "indicator"
             Layout.minimumHeight: 50
             Layout.minimumWidth: 50
             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             active: robotstatusactive
+
         }
     }
 
