@@ -8,7 +8,9 @@ Entity{
     id:root
 
     property bool loadstatus:j3.meshstatus
-
+    property real j1angle
+    property real j2angle
+    property real j3angle
     BaseCamera{
         id:maincamera
         position: Qt.vector3d(-55,10,0)//相机位置
@@ -57,17 +59,19 @@ Entity{
     J1Axis{
         id:j1
         material: material
-
+        j1rotateangle: j1angle
     }
 
     J2Axis{
         id:j2
         material: material
+        j2rotateangle: j2angle
     }
 
     J3Axis{
         id:j3
         material: material
+        j3rotateangle: j3angle
     }
 
 }

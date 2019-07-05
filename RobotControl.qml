@@ -9,7 +9,9 @@ Item {
     height: 300
 
     property bool robotstatusactive
-
+    property real gdl1value: gdl1.value
+    property real gdl2value: gdl2.value
+    property real gdl3value: gdl3.value
     ColumnLayout{
         objectName: "sliders"
         width: 202
@@ -27,7 +29,11 @@ Item {
             width: 117
             height: 21
             value: 0.5
+            from: -90
+            to:90
+            stepSize: 1
             objectName: "gdl1"
+
         }
 
         Slider {
@@ -35,6 +41,9 @@ Item {
             width: 117
             height: 20
             value: 0.5
+            from: -109
+            to:109
+            stepSize: 1
             objectName: "gdl2"
         }
 

@@ -5,11 +5,12 @@ Entity{
     id:root
 
     property Material material //模型材质
-
+    property real j1rotateangle:0
 
     Transform{
         id:j1material
-
+//        rotation:fromAxisAndAngle(Qt.vector3d(0,1,0),angel)
+        matrix: rotateAround(Qt.vector3d(5.65,0,-9.65),j1rotateangle,Qt.vector3d(0,1,0))
     }
 
     Mesh{//scara 一轴模型

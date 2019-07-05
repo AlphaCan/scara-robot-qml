@@ -5,11 +5,11 @@ Entity{
     id:root
 
     property Material material
-
+    property real j2rotateangle:0
 
     Transform{
         id:j2material
-
+        matrix: rotateAround(Qt.vector3d(5.65,0,-9.65),j2rotateangle,Qt.vector3d(0,1,0))
     }
 
     Mesh{//scara 二轴模型
