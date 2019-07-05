@@ -19,8 +19,9 @@ Item {
             SceneRoot {
                 id: model
                 j1angle: robotControl.gdl1value
-                j2angle: robotControl.gdl1value + robotControl.gdl2value
-                j3angle: robotControl.gdl1value
+                j2angle: robotControl.gdl2value
+                j3angle: robotControl.gdl4value
+                j3length: robotControl.gdl3value
             }
 
         }

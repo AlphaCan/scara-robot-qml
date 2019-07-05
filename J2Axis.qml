@@ -9,7 +9,7 @@ Entity{
 
     Transform{
         id:j2material
-        matrix: rotateAround(Qt.vector3d(5.65,0,-9.65),j2rotateangle,Qt.vector3d(0,1,0))
+        matrix: rotateAround(Qt.vector3d(5.55,0,-21.15),j2rotateangle,Qt.vector3d(0,1,0))
     }
 
     Mesh{//scara 二轴模型

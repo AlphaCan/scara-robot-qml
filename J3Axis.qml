@@ -7,10 +7,13 @@ Entity{
     property Material material
     property bool meshstatus:false
     property real j3rotateangle:0
+    property real j3distance: 0
 
     Transform{
         id:j3material
-        matrix: rotateAround(Qt.vector3d(5.65,0,-9.65),j3rotateangle,Qt.vector3d(0,1,0))
+        translation: Qt.vector3d(0,j3distance,0)
+        matrix: rotateAround(Qt.vector3d(5.52,0,-33.168),j3rotateangle,Qt.vector3d(0,1,0))
+
     }
 
     Mesh{//Scara 三轴模型

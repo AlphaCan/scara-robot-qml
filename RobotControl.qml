@@ -12,6 +12,7 @@ Item {
     property real gdl1value: gdl1.value
     property real gdl2value: gdl2.value
     property real gdl3value: gdl3.value
+    property real gdl4value: gdl4.value
     ColumnLayout{
         objectName: "sliders"
         width: 202
@@ -27,8 +28,8 @@ Item {
         Slider {
             id: gdl1
             width: 117
-            height: 21
-            value: 0.5
+            height: 24
+            value: 0.0
             from: -90
             to:90
             stepSize: 1
@@ -39,8 +40,8 @@ Item {
         Slider {
             id: gdl2
             width: 117
-            height: 20
-            value: 0.5
+            height: 24
+            value: 0.0
             from: -109
             to:109
             stepSize: 1
@@ -50,16 +51,22 @@ Item {
         Slider {
             id: gdl3
             width: 117
-            height: 23
-            value: 0.5
+            height: 24
+            value: 0.0
+            from:0
+            to:-9
+            stepSize: 0.1
             objectName: "gdl3"
         }
 
         Slider {
-            id: j4_slider
+            id: gdl4
             width: 117
-            height: 21
-            value: 0.5
+            height: 24
+            value: 0.0
+            from: -360
+            to:360
+            objectName: "gdl4"
         }
 
         StatusIndicator {

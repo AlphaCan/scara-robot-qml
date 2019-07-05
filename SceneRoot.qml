@@ -11,6 +11,7 @@ Entity{
     property real j1angle
     property real j2angle
     property real j3angle
+    property real j3length
     BaseCamera{
         id:maincamera
         position: Qt.vector3d(-55,10,0)//相机位置
@@ -54,25 +55,22 @@ Entity{
     BaseAxis{
         id:base
         material: material
+        J1Axis{
+            id:j1
+            material: material
+            j1rotateangle: j1angle
+            J2Axis{
+                id:j2
+                material: material
+                j2rotateangle: j2angle
+                J3Axis{
+                    id:j3
+                    material: material
+                    j3rotateangle: j3angle
+                    j3distance: j3length
+                }
+            }
+        }
     }
-
-    J1Axis{
-        id:j1
-        material: material
-        j1rotateangle: j1angle
-    }
-
-    J2Axis{
-        id:j2
-        material: material
-        j2rotateangle: j2angle
-    }
-
-    J3Axis{
-        id:j3
-        material: material
-        j3rotateangle: j3angle
-    }
-
 }
 
