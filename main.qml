@@ -3,10 +3,12 @@ import QtQuick.Scene3D 2.12
 import QtQuick.Controls 2.5
 
 Item {
-
+    width: 800
+    height: 600
 
 
     Frame{
+
         anchors.fill: parent
         Scene3D {
             id: scene3d
@@ -25,12 +27,27 @@ Item {
             }
 
         }
+
+        RobotStatus{
+            id:robotstatus
+            anchors.top: parent.top
+            anchors.right: parent.right
+            j1dgree: robotControl.gdl1value
+            j2dgree: robotControl.gdl2value
+            j3dgree: robotControl.gdl3value
+            j4dgree: robotControl.gdl4value
+        }
+
+
         RobotControl {
             id: robotControl
-            x: 0
-            y: 0
+            visible: robotstatus.manual_switch
+            anchors.top: parent.top
+            anchors.left: parent.left
             robotstatusactive: model.loadstatus//机器人状态
         }
+
+
 
         Column {
             visible: !model.loadstatus// 隐藏繁忙加载图标
@@ -66,7 +83,6 @@ Item {
 
 
 
-/*##^## Designer {
-    D{i:0;autoSize:true;height:480;width:640}
-}
- ##^##*/
+
+
+

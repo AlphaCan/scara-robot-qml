@@ -10,5 +10,6 @@
         <file>CustomDirectLight.qml</file>
         <file>RobotControl.qml</file>
         <file>SceneRoot.qml</file>
+        <file>RobotStatus.qml</file>
     </qresource>
 </RCC>

@@ -32,7 +32,7 @@ Item {
             value: 0.0
             from: -90
             to:90
-            stepSize: 1
+            stepSize: 0.1
             objectName: "gdl1"
 
         }
@@ -44,7 +44,7 @@ Item {
             value: 0.0
             from: -109
             to:109
-            stepSize: 1
+            stepSize: 0.1
             objectName: "gdl2"
         }
 
@@ -66,6 +66,7 @@ Item {
             value: 0.0
             from: -360
             to:360
+            stepSize: 0.1
             objectName: "gdl4"
         }
 
