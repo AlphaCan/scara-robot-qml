@@ -9,8 +9,8 @@ Entity{
 
     Transform{
         id:j1material
-//        rotation:fromAxisAndAngle(Qt.vector3d(0,1,0),angel)
-        matrix: rotateAround(Qt.vector3d(5.65,0,-9.65),j1rotateangle,Qt.vector3d(0,1,0))
+        matrix: rotateAround(Qt.vector3d(5.35,0,-8.95),j1rotateangle,Qt.vector3d(0,1,0))
+
     }
 
     Mesh{//scara 一轴模型
