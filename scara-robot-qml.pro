@@ -13,12 +13,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        baserobot.cpp \
-        main.cpp \
-        robotmodelcontrol.cpp \
-        robotstatus.cpp \
-        scararobot.cpp \
-        signalhandler.cpp
+        main.cpp
 
 RESOURCES += qml.qrc \
     model.qrc
@@ -34,9 +29,4 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-HEADERS += \
-    baserobot.h \
-    robotmodelcontrol.h \
-    robotstatus.h \
-    scararobot.h \
-    signalhandler.h
+HEADERS +=
